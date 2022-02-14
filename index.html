@@ -18,9 +18,7 @@
             background: black;
             color: white;
         }
-
         /*barra de rolagem*/
-
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -36,7 +34,7 @@
         .nav-bar {
             width: 100%;
             background-color: black;
-            height: 50px;
+            height: 80px;
             position: fixed;
         }
         .nav-bar-container {
@@ -58,10 +56,10 @@
            padding: 10px;
         }
         .perfil {
-            background: url(./boku\ no\ hero.png) no-repeat center center/cover;
+            background: url(./boku\ no\ hero2.png) no-repeat center center/cover;
 
             /* overlay*/
-
+            
             background-color:rgb(0,0,0,0.5) ;
             background-blend-mode: color ;
             height: 100vh;
@@ -72,17 +70,9 @@
             
         }
         .perfis {
-            width: 700px;
-            height: 200px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            /*efeito glassmorphism = efeito vidro*/
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 30px;
         }
         h2 {
             text-align: center;
@@ -106,21 +96,21 @@
     <header class="perfil">
         <div class="perfil-container">
             <div class="perfis">
-                <div class="ret">
+                <div >
                     <a href="pag2.html">
                         <img class="imagem" src="./morto.png" alt="pedro">
                     </a>
                     <h2>Pedro Lopes</h2>
                 </div>
-                <div class="ret" > 
+                <div > 
                     <img class="imagem" src="./cavaleiro.png">
                     <h2>Mariana Lopes</h2>
                 </div>
-                <div class="ret">
+                <div >
                     <img class="imagem" src="./dracula.png">
                     <h2>Mery Lopes</h2>
                 </div>
-                <div class="ret">
+                <div >
                     <img class="imagem" src="./do-utilizador (1).png">
                     <h2> + perfil</h2>
                 </div>
