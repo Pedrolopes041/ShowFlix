@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShowFlix</title>
 </head>
 <style>
@@ -12,8 +14,29 @@
             padding: 0;
             margin: 0;
         }
+        body {
+            color: white;
+        }
         a {
             text-decoration: none;
+            color: white;
+        }
+        footer {
+            background: black;
+            color: white;
+        }
+        /*barra de rolagem*/
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: black;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: gray;
+            border-radius: 30px;
         }
         .nav-bar {
             width: 100%;
@@ -26,11 +49,8 @@
             height: 100%;
             margin: auto;
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
             align-items: center;
-
-            color:#551A8B;
             font-family: 'Rowdies', cursive;
         }
         .nav-bar-items {
@@ -46,23 +66,11 @@
             display: flex;
             align-items:flex-end;
             height: 100vh;
-            background: url(./DRAGON.jpg) no-repeat center center/cover;
+            background: url(./boku\ no\ hero2.png) no-repeat center center/cover;
 
             background-color:rgb(0,0,0,0.5) ;
             background-blend-mode: color ;
 
-        }
-        .filme {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            /*efeito glassmorphism = efeito vidro*/
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 10px;
         }
         .filmes {
             display: flex;
@@ -70,30 +78,54 @@
             justify-content: space-around;
             width: 900px;
         }
+        .filme {
+            /*efeito glassmorphism = efeito vidro*/
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+        }
         img {
             width: 400px;
             height: 250px;
             margin-bottom: 20px;
         }
         h2 {
-            color:#551A8B;
-            background: rgba(#255, #255, #255, 2);
-            position: relative;
-            right: 340px;
+            margin-left: 25px;
             font-family: 'Zen Kaku Gothic Antique', sans-serif;
         }
-        iframe {
-            height: 550px;
-            width: 1349px;
-            border-style: none;
-
-        }
         h3 {
+            border-radius: 10px;
+            padding: 2px;
             background-color: black;
-            color:#551A8B;
             margin-bottom: 15px;
             display: flex;
             justify-content: center;
+        }
+        @media(max-width: 414px) {
+            .filmes {
+                width: 303px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            img {
+                width: 250px;
+                height: 170px;
+            }
+            .filme {
+                margin: auto;
+            }
+            h2 {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            .nav-bar-container {
+                font-size: 12px;
+            }
+            p {
+                font-size: 10px;
+            }
         }
 </style>
 <body>
@@ -115,8 +147,9 @@
         <section>
             <div class="showcase">
                 <div class="filme">
-                <h2>Assista o Trailer</h2>
+                    <h2>Assista o Trailer</h2>
                     <div class="filmes">
+                        
                         <div>
                             <a href="./filme2.html">
                                 <img src="./one piece.jpg">
@@ -134,6 +167,10 @@
             </div>
         </section>
     </main>
-    
+    <!--footer-->
+    <footer id="footer">
+        <p>copyright 2020 - todos os direitos reservados.</p>
+        <p>Feito por Pedro Augusto Lopes Gomes</p>
+    </footer>
 </body>
 </html>
