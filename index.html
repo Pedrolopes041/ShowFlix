@@ -62,11 +62,12 @@
             
         }
         .perfis {
-            width: 800px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            align-content: center;
+            width: 600px;
 
         }
         .per-img {
@@ -74,6 +75,14 @@
             flex-direction: column;
             align-items: center;
             
+        }
+        .gerencia {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 80px;
+            width: 600px;
+
         }
         p {
             background-color: rgb(255,255,255,0.2);
@@ -86,16 +95,25 @@
             font-size: 25px;
             
         }
-        @media(max-width: 414px) {
+        @media(max-width: 450px) {
             .nav-bar-container {
                 font-size: 12px;
             }
             .perfis {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
-                width: 400px;
+                align-items: center;
+                align-content: center;
+                width: 410px;
             }
+            .gerencia {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 80px;
+            width: 410px;
+
+        }
             h2 {
                 font-size: 15px;
             }
@@ -109,10 +127,11 @@
             }
             p {
                 font-size: 10px;
+                padding: 5px;
                 width: 100px;
             }
         }
-        @media(max-height: 414px) {
+        @media(max-height: 450px) {
             .nav-bar-container {
                 font-size: 12px;
             }
@@ -133,6 +152,13 @@
                 font-size: 10px;
                 width: 100px;
             }
+            .gerencia {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 650px;
+
+        }
 
         }
      </style> 
@@ -153,13 +179,17 @@
                         <img class="imagem" src="./morto.png" alt="pedro">
                     </a>
                     <h2>Pedro Lopes</h2>
-                    <p> + Pefil</p>
                 </div>
                 <div class="per-img"> 
-                    <img class="imagem" src="./cavaleiro.png">
+                    <a href="pag2.html">
+                        <img class="imagem" src="./cavaleiro.png">
+                    </a>
                     <h2>Mariana Lopes</h2>
-                    <p> Gerenciar contas</p>
                 </div>
+            </div>
+            <div class="gerencia">
+                <p> + Pefil</p>
+                <p> Gerenciar contas</p>
             </div>
         </div>        
     </header>
