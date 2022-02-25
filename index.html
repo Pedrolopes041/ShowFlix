@@ -16,10 +16,6 @@
         a {
             text-decoration: none;
         }
-        footer {
-            background: black;
-            color: white;
-        }
         body {
             color: white;
         }
@@ -39,7 +35,7 @@
         .nav-bar {
             width: 100%;
             background-color: black;
-            height: 50px;
+            height: 35px;
             position: fixed;
         }
         .nav-bar-container {
@@ -47,17 +43,9 @@
             height: 100%;
             margin: auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             font-family: 'Rowdies', cursive;
-        }
-        .nav-bar-items {
-           display: flex;
-           list-style: none;
-    
-        }
-        .nav-bar-items li {
-           padding: 10px;
         }
         .perfil {
             background: url(./boku\ no\ hero2.png) no-repeat center center/cover;
@@ -75,18 +63,28 @@
         }
         .perfis {
             width: 800px;
-            height: 300px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
 
         }
-        h2 {
-            text-align: center;
-            background-color: black;
-            padding: 2px;
+        .per-img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        p {
+            background-color: rgb(255,255,255,0.2);
+            width: 200px;
             border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+
+            font-size: 25px;
+            
         }
         @media(max-width: 414px) {
             .nav-bar-container {
@@ -94,25 +92,24 @@
             }
             .perfis {
                 display: flex;
-                flex-direction: column;
-                width: 200px;
-                height: 550px;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 400px;
             }
             h2 {
-                font-size: 20px;
+                font-size: 15px;
             }
             .imagem {
-                height: 90px;
-                width: 90px;
+                height: 110px;
+                width: 110px;
             }
             .per-img {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                margin-top: 12px;
             }
             p {
                 font-size: 10px;
+                width: 100px;
             }
         }
         @media(max-height: 414px) {
@@ -122,6 +119,7 @@
             .perfis {
                 display: flex;
                 flex-direction: row;
+                justify-content: space-evenly;
                 width: 650px;
             }
             h2 {
@@ -133,6 +131,7 @@
             }
             p {
                 font-size: 10px;
+                width: 100px;
             }
 
         }
@@ -143,10 +142,6 @@
     <NAV class="nav-bar">
         <div class ="nav-bar-container">
             <h1>SHOWFLIX</h1>
-            <ul class="nav-bar-items">
-                <li>LOGOUT</li>
-                <li>CONFIGURAÇÕES</li>
-            </ul>
         </div>
     </NAV>
     <!--showcase-->   
@@ -158,26 +153,15 @@
                         <img class="imagem" src="./morto.png" alt="pedro">
                     </a>
                     <h2>Pedro Lopes</h2>
+                    <p> + Pefil</p>
                 </div>
                 <div class="per-img"> 
                     <img class="imagem" src="./cavaleiro.png">
                     <h2>Mariana Lopes</h2>
-                </div>
-                <div class="per-img">
-                    <img class="imagem" src="./dracula.png">
-                    <h2>Mery Lopes</h2>
-                </div>
-                <div class="per-img">
-                    <img class="imagem" src="./do-utilizador (1).png">
-                    <h2> + perfil</h2>
+                    <p> Gerenciar contas</p>
                 </div>
             </div>
         </div>        
     </header>
-    <!--footer-->
-    <footer id="footer">
-        <p>copyright 2020 - todos os direitos reservados.</p>
-        <p>Feito por Pedro Augusto Lopes Gomes</p>
-    </footer>
 </body>
 </html>
