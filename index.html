@@ -65,9 +65,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            align-items: center;
-            align-content: center;
-            width: 600px;
+            width: 300px;
 
         }
         .per-img {
@@ -81,7 +79,6 @@
             justify-content: space-around;
             align-items: flex-end;
             height: 80px;
-            width: 600px;
 
         }
         p {
@@ -93,105 +90,78 @@
             justify-content: center;
 
             font-size: 25px;
+            padding: 5px;
             
         }
-        @media(max-width: 450px) {
+        @media(max-width: 414px) {
             .nav-bar-container {
                 font-size: 12px;
             }
             .perfis {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                align-content: center;
-                width: 410px;
+                background-color: aqua;
             }
             .gerencia {
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-end;
-            height: 80px;
-            width: 410px;
-
-        }
-            h2 {
-                font-size: 15px;
+            background-color: blueviolet;
             }
             .imagem {
                 height: 110px;
                 width: 110px;
             }
-            .per-img {
-                display: flex;
-                flex-direction: column;
-            }
-            p {
-                font-size: 10px;
-                padding: 5px;
-                width: 100px;
-            }
         }
-        @media(max-height: 450px) {
+        @media(max-height: 667px) {
             .nav-bar-container {
                 font-size: 12px;
-            }
-            .perfis {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                width: 650px;
             }
             h2 {
                 font-size: 15px;
             }
-            .imagem {
-                height: 100px;
-                width: 100px;
-            }
             p {
                 font-size: 10px;
                 width: 100px;
             }
-            .gerencia {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            width: 650px;
-
-        }
-
+            .imagem {
+                height: 110px;
+                width: 110px;
+            }
         }
      </style> 
 </head>
 <body>
     <!--navbar-->
-    <NAV class="nav-bar">
-        <div class ="nav-bar-container">
-            <h1>SHOWFLIX</h1>
-        </div>
-    </NAV>
-    <!--showcase-->   
-    <header class="perfil">
-        <div class="perfil-container">
-            <div class="perfis">
-                <div class="per-img">
-                    <a href="pag2.html">
-                        <img class="imagem" src="./morto.png" alt="pedro">
-                    </a>
-                    <h2>Pedro Lopes</h2>
-                </div>
-                <div class="per-img"> 
-                    <a href="pag2.html">
-                        <img class="imagem" src="./cavaleiro.png">
-                    </a>
-                    <h2>Mariana Lopes</h2>
-                </div>
+    <header>
+        <NAV class="nav-bar">
+            <div class ="nav-bar-container">
+                <h1>SHOWFLIX</h1>
             </div>
-            <div class="gerencia">
-                <p> + Pefil</p>
-                <p> Gerenciar contas</p>
-            </div>
-        </div>        
+        </NAV>
     </header>
+    <!--showcase-->   
+    <main>
+        <section>
+            <div class="perfil">
+                <div class="perfil-container">
+                    <div class="perfis">
+                        <div class="per-img">
+                            <a href="pag2.html">
+                                <img class="imagem" src="./morto.png" alt="pedro">
+                            </a>
+                            <h2>Pedro Lopes</h2>
+                        </div>
+                        <div class="per-img"> 
+                            <a href="pag2.html">
+                                <img class="imagem" src="./cavaleiro.png">
+                            </a>
+                            <h2>Mariana Lopes</h2>
+                        </div>
+                    </div>
+                    <div class="gerencia">
+                        <p> + Pefil</p>
+                        <p> Gerenciar contas</p>
+                    </div>
+                </div>        
+            </div>
+
+        </section>
+    </main>
 </body>
 </html>
