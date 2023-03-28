@@ -1,0 +1,102 @@
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        body {
+            color: white;
+        }
+        /*barra de rolagem*/
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: black;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: gray;
+            border-radius: 30px;
+        }
+        .nav-bar {
+            width: 100%;
+            background-color: black;
+            height: 35px;
+            position: fixed;
+        }
+        .nav-bar-container {
+            width: 80%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Rowdies', cursive;
+        }
+        .perfil {
+            background: url(./imagem/boku\ no\ hero2.png) no-repeat center center/cover;
+
+            /* overlay*/
+            
+            background-color:rgb(0,0,0,0.5) ;
+            background-blend-mode: color ;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            
+        }
+        .perfis {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 300px;
+
+        }
+        .per-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            
+        }
+        p {
+            background-color: rgb(255,255,255,0.2);
+            width: 200px;
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+
+            font-size: 25px;
+            padding: 5px;
+            
+        }
+        @media(max-width: 480px) {
+            .nav-bar-container {
+                font-size: 12px;
+            }
+            .imagem {
+                height: 110px;
+                width: 110px;
+            }
+            .per-img {
+                padding: 30px;
+            
+        }
+             h2 {
+                font-size: 15px;
+            }
+            p {
+                font-size: 10px;
+                width: 100px;
+            }
+        }
